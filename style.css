@@ -67,7 +67,7 @@ nav{
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    
+     
 }
 
 .menu{
@@ -85,6 +85,16 @@ nav{
     justify-content: center;
     align-items: center;
 }
+
+@keyframes flotting{
+    0%, 100%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-8px);
+    }
+}
+
 .citations-div{
     width: 50%;
     position: relative;
@@ -100,8 +110,15 @@ nav{
     background-color: rgba(1, 1, 26, 0.808);
     box-shadow: 2px 2px 5px 5px rgba(18, 19, 102, 0.733);
 
+    animation: flotting 5s ease-in-out infinite;
+    transition: transform 0.3s ease
     
 }
+
+.citations-div:hover{
+    transform: translateY(-8px) scaleX(1.03);
+}
+
 .citations-div h5{
     text-align: right;
     text-transform: uppercase;
