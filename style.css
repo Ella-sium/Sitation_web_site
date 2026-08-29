@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: url(background.avif);
+    background-image: url(back6.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,15 +18,6 @@ body{
 a{
     text-decoration: none;
     transition: 0.3s;
-}
-
-a:hover{
-    color: rgb(116, 18, 111);
-    transform: scale(1.1);
-}
-
-i:hover{
-    color: rgb(116, 18, 111);
 }
 
 ul a{
@@ -76,14 +67,20 @@ nav{
 }
 
 /* ----------------------------------------- main --------------------------------------- */
+/* main{
+    padding: 10vh;
+} */
 .citations{
-    min-height: calc(100vh - 90px);
+    /* prend 78 % de la taille de l'ecran et retire 90px */
+    min-height: calc(78vh - 90px);
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 60px;
     justify-content: center;
     align-items: center;
+
+    animation: flotting 5s ease-in-out infinite;
 }
 
 @keyframes flotting{
@@ -102,7 +99,6 @@ nav{
 
 
     text-align: justify;
-
     border-radius: 0px 30px 30px 30px;
     justify-content: center;
     align-items: center;
@@ -110,13 +106,12 @@ nav{
     background-color: rgba(1, 1, 26, 0.808);
     box-shadow: 2px 2px 5px 5px rgba(18, 19, 102, 0.733);
 
-    animation: flotting 5s ease-in-out infinite;
-    transition: transform 0.3s ease
+    transition: transform 0.3s ease;
     
 }
 
 .citations-div:hover{
-    transform: translateY(-8px) scaleX(1.03);
+    transform: scale(1.03);
 }
 
 .citations-div h5{
@@ -126,6 +121,7 @@ nav{
     letter-spacing: 5px;
     font-style: italic;
 }
+
 .citations-div i{
     font-style: italic;
     font-size: 2rem;
@@ -135,29 +131,31 @@ nav{
 #griffe2{
     font-style: italic;
     font-size: 2rem;
+    display: block;
     text-align: right;
 } 
 
-
-
-/*------------------------ footer ------------------*/
-footer{
+.sec-icons{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    /* padding: 10px; */
 }
+
 .icons i{
     font-size: 1.5rem;
 }
+
 .icons button{
     border: none;
     background-color: rgba(1, 1, 26, 0.966);
     color: aliceblue;
 }
+
 .icons{
     width: 30%;
-    height: 80px;
+    height: 60px;
+    margin-top: 40px;
 
     display: flex;
     justify-content: center;
@@ -166,10 +164,69 @@ footer{
 
     border-radius: 50px;
     background-color: rgba(1, 1, 26, 0.966);
+}
+
+/*------------------------ footer ------------------*/
+footer{
+    background-color: rgba(1, 1, 26, 0.808);
+    box-shadow: -2px -2px 5px 5px rgba(18, 19, 102, 0.733);
+    padding: 50px 0 20px;
+    margin-top: 50px;
+    font-size: 1rem;
 
 }
 
+footer h2{
+    font-size: 1.02rem;
+}
+
+footer hr {
+    border: none;
+    height: 1.5px;
+    background-color: aliceblue;
+    margin: 0 10%;
+}
+.columns{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: 1px;
+    font-style: italic;
+    gap: 10px;
+    padding: 0;
+}
+
+.copyright{
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px;
+}
+
 /*----------------- Responsive ------------------------------*/
+@media (max-width: 1080px) {
+    .icons{
+        width: 45%;
+        /* height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px; */
+    }
+    /* .icons button {
+        width: 50px;
+    } */
+}
+
+
 @media (max-width: 916px){
     ul{
         display: none;
@@ -189,29 +246,36 @@ footer{
     }
 }
 
-@media (max-width: 1080px) {
-    .icons{
-        width: 45%;
-        /* height: auto;
-        flex-wrap: wrap;
-        gap: 30px;
-        padding: 20px; */
-    }
-    /* .icons button {
-        width: 50px;
-    } */
-}
-
-
 @media (max-width: 700px) {
     .icons{
-        width: 80%;
+        width: 60%;
         height: auto;
-        flex-wrap: wrap;
-        gap: 30px;
+        /* flex-wrap: wrap; */
+        /* gap: 1%; */
         padding: 20px;
     }
     .icons button {
         width: 50px;
     }
+}
+
+@media (max-width: 430px) {
+    .icons{
+        width: 90%;
+        height: auto;
+        margin-top: 80px;
+    }
+
+    .icons button {
+        width: 50px;
+    }
+
+    .citations-div{
+    width: 80%;
+    }
+
+    footer h2{
+        font-size: 0.8rem;
+    }
+
 }
