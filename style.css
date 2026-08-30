@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
+.home{
     background-image: url(back6.jfif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -173,7 +173,6 @@ footer{
     padding: 50px 0 20px;
     margin-top: 50px;
     font-size: 1rem;
-
 }
 
 footer h2{
@@ -278,4 +277,50 @@ footer ul {
         font-size: 0.8rem;
     }
 
+}
+
+/*---------------------------------------------------------- categories page ----------------------------------------------------------------*/
+.categories{
+    background-image: url(Art.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+    min-height: 100vh;
+}
+
+.categories-sec {
+    padding: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 20%;
+    flex-wrap: wrap;
+}
+
+.cat-categories{
+    margin-bottom: 50px;
+}
+
+.cat-categories h2{
+    color: rgba(1, 1, 26, 0.966);
+    text-align: center;
+    padding: 20px;
+ }
+
+.cat-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-size: 3.5rem;
+    color: rgba(1, 1, 26, 0.966);
+    
+    width: 200px;
+    height: 200px;
+
+    background-color: rgba(240, 248, 255, 0.459);
+    border-radius: 30px;
 }
