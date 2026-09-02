@@ -1,128 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
+
     <title>S!T@T!ON</title>
 </head>
-<body class="home">
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
     <header>
         <nav>
+
             <div class="logo">
                 <h1>S!T@T!ON</h1>
             </div>
 
-            <ul>
-                <li>
-                    <a href="index.html"> Accueil </a>
-                </li>
-                <li>
-                    <a href="categories.html"> Categories </a>
-                </li>
-                <li>
-                    <a href="#"> Generer </a>
-                </li>
-                <li>
-                    <a href="#"> Favoris </a>
-                </li>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#categories">Catégories</a></li>
+                <li><a href="#">Générer</a></li>
+                <li><a href="#">Favoris</a></li>
             </ul>
 
-            <!-- la photo de profile -->
             <div class="profile">
-                <img src="avatar.jfif" alt="account avatar">
+                <img src="avatar.jfif" alt="Photo de profil">
             </div>
 
-            <!-- Le menu deroulant -->
             <div class="menu">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
         </nav>
     </header>
+
+
     <main>
 
-        <!-- Cadre des citations -->
-        <section class="citations">
+        <!-- ================= CITATION ================= -->
+
+        <section class="citation-section" id="accueil">
+
+            <div class="section-title">
+                <span>Une pensée</span>
+                <h2>pour aujourd'hui</h2>
+            </div>
+
             <div class="citations-div">
-                <h2> Titre de la citation</h2>
-                <i class="fa-solid fa-quote-left" id="griffe1"></i>
+
+                <i class="fa-solid fa-quote-left quote quote-left"></i>
+
+                <h3>Titre de la citation</h3>
+
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Culpa sequi quisquam, hic in sit fugit esse impedit quo nisi
-                    qui possimus dignissimos aut, cupiditate omnis ut mollitia facere, 
-                    molestiae commodi.
+                    qui possimus dignissimos aut, cupiditate omnis ut mollitia
+                    facere, molestiae commodi.
                 </p>
-                <i class="fa-solid fa-quote-right griffe2" id="griffe2"></i>
-                <h5>
-                    -- Auteur
-                </h5>
+
+                <i class="fa-solid fa-quote-right quote quote-right"></i>
+
+                <h5>— Auteur</h5>
+
             </div>
-            
-        </section>
-        <section class="sec-icons">
-            <!-- icons -->
+
+
+            <!-- ================= ACTIONS ================= -->
+
             <div class="icons">
-                <button>
-                    <i class="fa-solid fa-circle-left"></i>
+
+                <button aria-label="Citation précédente">
+                    <i class="fa-solid fa-chevron-left"></i>
                 </button>
-                
-                <!-- <div class="sous-icons">
+
+                <button aria-label="Modifier">
                     <i class="fa-solid fa-pen-to-square"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-print"></i>
-                </div> -->
+                </button>
 
-                <button>
-                <i class="fa-solid fa-pen-to-square"></i>
+                <button aria-label="Ajouter aux favoris">
+                    <i class="fa-regular fa-star"></i>
                 </button>
-        
-                <button>
-                    <i class="fa-solid fa-star"></i>
+
+                <button aria-label="Partager">
+                    <i class="fa-solid fa-share-nodes"></i>
                 </button>
-                
-                <button>
-                    <i class="fa-solid fa-share"></i>
-                </button>
-                
-                <button>
+
+                <button aria-label="Imprimer">
                     <i class="fa-solid fa-print"></i>
                 </button>
-            
-                <button>
-                    <i class="fa-solid fa-circle-right"></i>
+
+                <button aria-label="Citation suivante">
+                    <i class="fa-solid fa-chevron-right"></i>
                 </button>
+
             </div>
+
         </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories-section" id="categories">
+
+            <div class="section-title">
+                <span>Explorer</span>
+                <h2>Catégories</h2>
+            </div>
+
+
+            <div class="categories-grid">
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-fire-flame-curved"></i>
+                    </div>
+                    <h3>Motivation</h3>
+                    <p>Pour avancer malgré les difficultés.</p>
+                </div>
+
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Amour</h3>
+                    <p>Les mots qui parlent aux cœurs.</p>
+                </div>
+
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-heart-crack"></i>
+                    </div>
+                    <h3>Tristesse</h3>
+                    <p>Des pensées pour les moments difficiles.</p>
+                </div>
+
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3>Sagesse</h3>
+                    <p>Réflexions et leçons de vie.</p>
+                </div>
+
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <h3>Life</h3>
+                    <p>Des pensées sur la vie et ses chemins.</p>
+                </div>
+
+
+                <div class="category-card add-category">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <h3>Ajouter</h3>
+                    <p>Créer une nouvelle catégorie.</p>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <!-- les trois Colonnes du footer -->
-        <div class="columns">
-            <h2>S!T@T!ON -- <br> Une phrase sur le site </h2>
-            <div class="navbar-footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>S!T@T!ON</h2>
+                <p>
+                    Une phrase peut changer une journée.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Navigation</h3>
+
                 <ul>
-                    <li><a href="#" class="navbar-footer-link">Accueil</a></li>
-                    <li><a href="#" class="navbar-footer-link">Catégories</a></li>
-                    <li><a href="#" class="navbar-footer-link">Générer</a></li>
-                    <li><a href="#" class="navbar-footer-link">Favoris</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#categories">Catégories</a></li>
+                    <li><a href="#">Générer</a></li>
+                    <li><a href="#">Favoris</a></li>
                 </ul>
             </div>
 
-            <div class="contacts">
+
+            <div>
+                <h3>À propos</h3>
+
                 <ul>
-                    <li><a href="#" class="contacts-link">À propos</a></li>
-                    <li><a href="#" class="contacts-link">Contact</a></li>
-                    <li><a href="#" class="contacts-link">Réseaux</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Réseaux</a></li>
                 </ul>
             </div>
+
         </div>
 
-        <!-- Copyright -->
+
         <hr>
-        <h2 class="copyright">© - 2026 --- S!T@T!ON --- @ellasium.in.progress</h2>
+
+        <p class="copyright">
+            © 2026 — S!T@T!ON — @ellasium.in.progress
+        </p>
+
     </footer>
+
 </body>
 </html>
