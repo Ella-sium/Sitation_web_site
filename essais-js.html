@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Crée une page HTML contenant un bouton.
+Lorsque l'utilisateur clique dessus :
+demande son prénom avec prompt() ;
+demande confirmation avec confirm() ;
+s'il accepte, affiche un message ;
+affiche la largeur de la fenêtre dans la console ;
+ajoute un deuxième bouton permettant de recharger la page. -->
+
+<button type="button" id="btn1">
+    Cliquez ici pour retourner en arriere
+</button>
+
+<button type="button" id="btn2">
+    Cliquez ici pour avancer
+</button>
+
+<button type="button" id="btn3">
+    Cliquez ici pour retourner de 2 pas
+</button>
+
+<script>
+    const bouton1 = document.getElementById("btn1");
+    const bouton2 = document.getElementById("btn2");
+    const bouton3 = document.getElementById("btn3");
+
+    bouton1.onclick = function(){
+        history.back();
+    };
+    bouton2.onclick = function(){
+        history.forward();
+    };
+    bouton3.onclick = function(){
+        history.go(-2);
+    };
+    
+</script>
+</body>
+</html>
